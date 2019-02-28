@@ -1,3 +1,6 @@
+# Login Tokens
+credentials.json
+
 # Logs
 logs
 *.log
@@ -59,3 +62,9 @@ typings/
 
 # next.js build output
 .next
+
+#eslint 
+.eslintrc.json
+
+#vs code specifics 
+.vscode/
