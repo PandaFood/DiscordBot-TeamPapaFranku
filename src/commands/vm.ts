@@ -68,6 +68,7 @@ function startMute(target : Discord.GuildMember, message : Discord.Message){
 	const MuteTime = 60 * 2 * 1000;
 
 	target.vote.isMuted = true;
+	clearTimeout(target.vote.muteTimer);
 	target.setMute(true);
 
 	setTimeout(() => {

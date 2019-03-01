@@ -20,9 +20,9 @@ module.exports = {
         if (targetMention.vote.isMuted)
             return message.channel.send('User is already muted');
         if (!message.member.voiceChannel)
-            return message.channel.send('User not in the same channel as you.');
-        if (!message.member.voiceChannel.members.has(targetMention.id))
             return message.channel.send('You arent in any voice channel.');
+        if (!message.member.voiceChannel.members.has(targetMention.id))
+            return message.channel.send('User not in the same channel as you.');
         voteMute(targetMention, voter, message);
     },
 };
